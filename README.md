@@ -98,4 +98,4 @@ Use the **__dev** folder to create your css cascade.
 
 ## License
 
-[MIT License](http://oswaldoacauan.mit-license.org/) © Oswaldo Acauan
+[MIT License](https://mit-license.org) © Pixelcraft
