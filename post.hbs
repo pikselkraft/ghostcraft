@@ -1,0 +1,59 @@
+{{!< default}}
+{{> header}}
+<div class="o-container">
+	<main class="o-main" role="main">
+	{{#post}}
+		<article class="c-post" role="article">
+			<header class="c-post__header">
+				<div class="c-post__meta">
+					<time class="c-post__date" datetime="{{date format="YYYY-MM-DD"}}">{{date format='dddd DD MMM YYYY'}}</time>
+					{{#if tags}}
+					<div class="c-post__tags">
+						Tags: {{tags separator=" | "}}
+					</div>
+					{{/if}}
+				</div>
+				<h1 class="c-post__title">{{title}}</h1>
+			</header>
+
+			<div class="c-post__content">
+				{{content}}
+			</div>
+
+			<footer class="c-post__footer">
+			{{#author}}
+			<div class="c-author">
+				{{#if image}}
+					<div class="c-author__image--thumbnail">
+						<img src="{{image}}" class="c-author__image"/>
+					</div>
+				{{/if}}
+				<div class="c-author__info">
+					<h4 class="c-author__name"><a href="{{url}}">{{name}}</a></h4>
+					{{#if website}}<span class="c-author__website"><a href="{{website}}">{{website}}</a></span>{{/if}}
+					{{#if location}}<span class="c-author__location">{{location}}</span>{{/if}}
+					{{#if bio}}
+						<div class="c-author__bio">
+							<p>{{bio}}</p>
+						</div>
+					{{/if}}
+				</div>
+			</div>
+			{{/author}}
+
+			<div class="c-share">
+				<p class="c-share__title">Share this post: &nbsp;</p>
+				<div class="c-share__icons">
+					<a class="c-icon c-icon__twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="u-visually-hidden">Twitter</span><i class="fa fa-twitter-square fa-2x"></i></a>
+					<a class="c-icon c-icon__facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="u-visually-hidden">Facebook</span><i class="fa fa-facebook-square fa-2x"></i></a>
+					<a class="c-icon c-icon__gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="u-visually-hidden">Google+</span><i class="fa fa-google-plus-square fa-2x"></i></a>
+				</div>
+			</div>
+
+			</footer>
+		</article>
+		{{> custom/comments}}
+	{{/post}}
+</main>
+{{> footer}}
+</div>

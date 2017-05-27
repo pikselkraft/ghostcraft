@@ -1,0 +1,27 @@
+{{#foreach posts}}
+<article class="c-article">
+		<header class="c-article__header">
+			<time class="c-article__time" datetime="{{date format="YYYY-MM-DD"}}">
+				<span class="c-time__month">{{date format="MMMM"}}</span>
+				<span class="c-time__date">{{date format="DD"}}</span>
+				<span class="c-time__year">{{date format="YYYY"}}</span>
+			</time>
+			<div class="o-article__title">
+				<h2 class="c-title"><a href="{{url}}" class="u-nounderline">{{title}}</a></h2>
+				{{#if featured}}
+				<div class="c-title--featured">
+					 <i class="fa fa-star-o"></i>
+				</div>
+				{{/if}}
+			</div>
+		</header>
+		<section class="c-article__content">
+			<div class="c-article__excerpt">
+				<p>{{excerpt words="25"}}
+					<a class="c-article__read" href="{{url}}">&raquo;</a>
+				</p>
+			</div>
+		</section>
+</article>
+{{/foreach}}
+{{pagination}}

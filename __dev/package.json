@@ -1,0 +1,45 @@
+{
+  "name": "ghost-npm-pixelcrafter",
+  "version": "0.0.1",
+  "description": "NPM build script for front-end workflow with Ghost CMS",
+  "main": "index.js",
+  "author": "pixelcraft",
+  "license": "ISCi",
+  "repository": {
+    "type": "git",
+    "url": "@TODO"
+  },
+  "bugs": {
+    "url": "@TODO"
+  },
+  "homepage": "@TODO",
+  "devDependencies": {
+    "clean-css": "^3.4.22",
+    "concat-cli": "^4.0.0",
+    "csscomb": "^3.1.7",
+    "imagemin": "^5.2.2",
+    "live-reload": "^1.1.0",
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.9.0",
+    "rework-npm-cli": "^0.1.1",
+    "stylelint": "^7.6.0",
+    "svg-sprite-generator": "0.0.7",
+    "svgo": "^0.7.1"
+  },
+  "scripts": {
+    "info": "echo 'npm as a build tool'",
+    "postcss": "postcss --config postcss.json",
+    "css:bundle": "rework-npm css-partials/*.css -o ../assets/css/bundle.css",
+    "cssnext": "postcss -u postcss-cssnext ../assets/css/bundle.css ../assets/css/bundle.css",
+    "css:comb": "csscomb ../assets/css/bundle.css",
+    "css:autoprefixer": "postcss -u autoprefixer --r ../assets/css/bundle.css",
+    "css:pix": "postcss -u pixrem ../assets/css/bundle.css -o ../assets/css/bundle.css",
+    "css:minify": "echo '=> minify:css' && cleancss ../assets/css/bundle.css -o ../assets/css/bundle.min.css",
+    "build:css": "echo '=> build:css' && npm run css:bundle && npm run css:comb && npm run css:autoprefixer && npm run css:pix && npm run cssnext && npm run css:minify",
+    "img:min": "echo '=> imagemin' && imagemin img/* ../assets/images/ -p",
+    "svg:clean": "echo '=> svg icons' && svgo -f ../assets/img/",
+    "svg:icons": "echo '=> svg icons' && svgo -f ../assets/img/ && svg-sprite-generate -d assets/img/icons -o dist/public/img/icons.svg",
+    "obs:livereload": "live-reload --port 9091 dist/public",
+		"open:dev": "opener http://localhost:2368"
+  }
+}

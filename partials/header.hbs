@@ -1,0 +1,25 @@
+<div role='banner' class="o-header">
+	<div class="c-header">
+		{{#if @blog.logo}}
+		<div class="c-logo--thumbnail">
+			<a class="c-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+		</div>
+		{{/if}}
+		<h1 class="c-blogtitle">
+			<a title="{{@blog.title}}" href='{{@blog.url}}'>
+				{{{@blog.title}}}
+			</a>
+		</h1>
+		<p class="c-blogdescription">
+				{{@blog.description}}
+		</p>
+		<div class="c-follow">
+			{{> custom/follow}}
+		</div>
+		{{#if navigation}}
+		<div class="o-nav">
+			{{navigation}}
+		</div>
+		{{/if}}
+	</div>
+</div>

@@ -1,0 +1,15 @@
+{{!< default}}
+{{> header}}
+<div class="o-container">
+	<main class="o-main" role="main">
+		{{#author}}
+		    <section class="c-author__profile">
+		        <h1 class="c-author__title">Article written by {{name}}</h1>
+						<p class="c-author__stats">{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</p>
+		    </section>
+		{{/author}}
+
+		{{> "loop"}}
+	</main>
+	{{> footer}}
+</div>

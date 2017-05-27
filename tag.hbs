@@ -1,0 +1,14 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- If we have a tag cover, display that - else blog cover - else nothing --}}
+{{> header}}
+{{!-- The main content area on the homepage --}}
+<div class="o-container">
+	<main class="o-main" role="main">
+		<h1>Posts tagged with <i>{{tag.name}}</i></h1>
+		{{!-- The tag below includes the post loop - partials/loop.hbs --}}
+		{{> "loop"}}
+	</main>
+	{{> footer}}
+</div>

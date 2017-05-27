@@ -1,0 +1,9 @@
+<nav class="c-pagination" role="navigation">
+    {{#if prev}}
+        <a class="c-pagination__newerposts" href="{{page_url prev}}"> Newer Posts</a>
+    {{/if}}
+    <span class="c-pagination__number">Page {{page}} of {{pages}}</span>
+    {{#if next}}
+        <a class="c-pagination__olderposts" href="{{page_url next}}">Older Posts </a>
+    {{/if}}
+</nav>

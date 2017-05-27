@@ -1,0 +1,10 @@
+<div class="c-follow__icons">
+	<a href="http://facebook.com/username"><i class="fa fa-facebook-square fa-2x"></i></a>
+	<a href="http://twitter.com/username"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="http://linkedin.com/in/username"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	{{#if @labs.subscribers}}
+			<a class="subscribe-button" href="{{@blog.url}}/subscribe/"><i class="fa fa-rss-square fa-2x"></i></a>
+	{{else}}
+			<a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/"><i class="fa fa-rss-square fa-2x"></i></a>
+	{{/if}}
+</div>

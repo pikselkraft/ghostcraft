@@ -1,0 +1,23 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Derek Salmon / pixelcraft -- frontend developper -- @drksalmon -- www.dereksalmon.me
+
+# THANKS
+
+    * Olivier - @in4reg
+    * Damien - @iamhiwelo
+    * Pierre - @Tael67
+		* Jean @hanzPhoks
+		* Max Zhukow @maxzhukow 
+    * Alsacréations - @alsacreations
+
+# TECHNOLOGY COLOPHON
+
+    * HTML5, CSS3, KNACSS & grillade.css
+    * NPM, NPM script, CssNext
+		* BEM css and atomic css
+    * Ghost CMS, Metalsmish
+    * Modernizr, reset.css
