@@ -79,17 +79,17 @@ You can customize the icons of the header in **follow.hbs** file in `/partials/c
 
 Make sure to replace the `username` in the URLs so the links point to your profiles. Or delete the useless profiles.
 
-		If you want to add an email / it's better to hash it
-		<a href="mailto:you@example.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+	If you want to add an email / it's better to hash it
+	<a href="mailto:you@example.com"><i class="fa fa-envelope-square fa-2x"></i></a>
 
-		<a href="http://github.com/username"><i class="fa fa-github-square fa-2x"></i></a>
-		<a href="http://plus.google.com/+username"><i class="fa fa-google-plus-square fa-2x"></i></a>
-		<a href="http://instagram.com/username"><i class="fa fa-instagram fa-2x"></i></a>
-		<a href="http://vimeo.com/username"><i class="fa fa-vimeo-square fa-2x"></i></a>
-		<a href="http://youtube.com/username"><i class="fa fa-youtube-square fa-2x"></i></a>
-		<a href="http://flickr.com/username"><i class="fa fa-flickr fa-2x"></i></a>
-		<a href="http://pinterest.com/username"><i class="fa fa-pinterest-square fa-2x"></i></a>
-		<a href="http://username.tumblr.com"><i class="fa fa-tumblr-square fa-2x"></i></a>
+	<a href="http://github.com/username"><i class="fa fa-github-square fa-2x"></i></a>
+	<a href="http://plus.google.com/+username"><i class="fa fa-google-plus-square fa-2x"></i></a>
+	<a href="http://instagram.com/username"><i class="fa fa-instagram fa-2x"></i></a>
+	<a href="http://vimeo.com/username"><i class="fa fa-vimeo-square fa-2x"></i></a>
+	<a href="http://youtube.com/username"><i class="fa fa-youtube-square fa-2x"></i></a>
+	<a href="http://flickr.com/username"><i class="fa fa-flickr fa-2x"></i></a>
+	<a href="http://pinterest.com/username"><i class="fa fa-pinterest-square fa-2x"></i></a>
+	<a href="http://username.tumblr.com"><i class="fa fa-tumblr-square fa-2x"></i></a>
 
 ### Design
 The css structure is base on BEM and atom design systems.
