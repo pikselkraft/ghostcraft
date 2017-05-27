@@ -30,7 +30,7 @@
 1. Navigate to your Ghost theme directory `ghost/content/themes`
 2. Clone the theme repository using the command below
 ```sh
-$ git clone https://github.com/pixel-craft/ghostcraft/ "ghostcraft"
+$ git clone https://github.com/pixel-craft/ghostcraft/
 ```
 3. Restart ghost and log in to your dashboard
 4. In settings under themes select **ghostcraft** and save
